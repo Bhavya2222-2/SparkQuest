@@ -1,0 +1,27 @@
+{
+  "cli": {
+    "version": ">= 16.22.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "autoIncrement": true
+    }
+  },
+  "submit": {
+    "production": {
+    "ios":{
+      "appleId":"studyspark20201@gmail.com",
+      "ascAppId":"6753971451",
+      "appleTeamId":"HBBSS4K4U8"
+    }
+    }
+  }
+}

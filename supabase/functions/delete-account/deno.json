@@ -1,0 +1,5 @@
+{
+  "$schema": "https://deno.land/x/deno@v1.45.3/cli/schemas/config-file.v1.json",
+  "lint": {},
+  "unstable": []
+}

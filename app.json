@@ -1,29 +1,31 @@
 {
   "expo": {
-    "name": "aistudy",
-    "slug": "aistudy",
+    "name": "SparkQuest",
+    "slug": "sparkquest",
     "version": "1.0.0",
-    "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "orientation": "portrait",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
+    "scheme": "sparkquest",
+    "splash": { "backgroundColor": "#ffffff" },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bhavyapatel.aistudy",
+      "buildNumber": "5",
+      "infoPlist": {
+        "NSUserNotificationUsageDescription": "SparkQuest uses notifications to remind you about your planned study tasks.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true
+      "package": "com.bhavyapatel.aistudy",
+      "adaptiveIcon": { "backgroundColor": "#ffffff" },
+      "notification": { "color": "#0a84ff", "sound": true }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "web": { "favicon": "" },
+    "plugins": ["expo-notifications", "expo-secure-store"],
+    "extra": {
+      "eas": { "projectId": "e091a696-176d-4001-8314-d9c224f9389c" }
     }
   }
 }
